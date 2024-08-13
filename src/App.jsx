@@ -74,7 +74,7 @@ const getData = (productId) => {
     <>
     <div className=' w-full h-100vh ' >
      <Navbar set={data}/>
-     <Background/>
+     
      <div className=" p-10 flex flex-wrap items-center justify-between gap-10  top-[600px]   text-">
      
      {data.map((item,index)=>(
@@ -88,9 +88,9 @@ const getData = (productId) => {
     </div>
    
     <Routes>
+    <Route path='/Background' element={<Background/>}/>
       <Route path='/About' element={<About/>}/>
       <Route path='/Menu' element={<Menu/>}/>
-      <Route path='/Background' element={<Background/>}/>
 
     </Routes>
   
