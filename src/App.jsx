@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 import Navbar from './Components/Navbar'
 import Card from './Components/Card'
+import About from './Components/About'
 import Background from './Components/Background'
+import Menu from './Components/Menu'
+import { Route, Routes } from 'react-router-dom'
 function App() {
    
   const products = [{
@@ -83,7 +86,16 @@ const getData = (productId) => {
      </div>
     
     </div>
+   
+    <Routes>
+      <Route path='/About' element={<About/>}/>
+      <Route path='/Menu' element={<Menu/>}/>
+      <Route path='/Background' element={<Background/>}/>
+
+    </Routes>
+  
     
+
     </>
   )
 }
