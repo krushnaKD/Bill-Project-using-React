@@ -14,7 +14,7 @@ function Navbar({set}) {
             <Link to="/Menu">Menu</Link> 
             <li>Orders</li>
             <Link to="/About">About</Link>
-            <li className='bg-red-300 px-1 gap-10 rounded-md text-[17px]'>Favouriets <span>({set.filter(item => item.status === true).length})</span></li>
+            {/* <li className='bg-red-300 px-1 gap-10 rounded-md text-[17px]'>Favouriets <span>({set.filter(item => item.status === true).length})</span></li> */}
         </ul>
     </div>
      </div>

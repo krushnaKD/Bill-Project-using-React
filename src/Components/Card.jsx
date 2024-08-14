@@ -5,7 +5,7 @@ function Card({values,handleClick,index}) {
     const {image,name,price,productId,status} = values
 
   return (
-    <div className='p-2  w-64  border-2 border-slate-700 rounded-md relative mt- mb-10'>
+    <div className='p-2  w-64  border-2 border-slate-700 rounded-md relative mt-20 mb-10'>
        <div className='w-full h-34 border-2 border-slate-700 rounded-md '>
         <img className='object-cover' src={image} alt="" />
        </div>
