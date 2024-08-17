@@ -8,46 +8,46 @@ function Menu() {
 
   const products = [{
     productId: '1',
-    image:"products/1868094.avif",
+    image:"https://assets.unileversolutions.com/v1/1868094.png?im=AspectCrop=(351,351);Resize=(351,351)",
     name:"Vanila",
     price:18,
     status: false,
 },{
     productId:'2',
-    image:"products/1868175.avif",
+    image:"https://assets.unileversolutions.com/v1/1868175.png?im=AspectCrop=(351,351);Resize=(351,351)",
     name:"choclate",
     price:22,
     status: false,
 },{
  productId:'3'  ,
- image:"products/1868113.avif",
+ image:"https://assets.unileversolutions.com/v1/1868113.png?im=AspectCrop=(351,351);Resize=(351,351)",
  name: "Strawberry",
  price:18,
  status: false,
 },{
     productId: '4' ,
-    image:"products/Aamras.avif",
+    image:"https://assets.unileversolutions.com/v1/1868177.png?im=AspectCrop=(680,680);Resize=(680,680)",
     name: "AamRas Bar",
     price:27,
     status: false,
  },
 ,{
     productId: '5' ,
-    image:"products/1869482.avif",
+    image:"https://assets.unileversolutions.com/v1/1869482.png?im=AspectCrop=(351,351);Resize=(351,351)",
     name: "feast Bar",
     price: 40,
     status: false,
    
 },{
     productId: '6' ,
-    image:"products/1862862.avif",
+    image:"https://assets.unileversolutions.com/v1/1862862.png?im=AspectCrop=(680,680);Resize=(680,680)",
     name: "Choco-Vanila",
     price: 27,
     status: false,
    
 },{
     productId: '7' ,
-    image:"Products/1862828.avif",
+    image:"https://assets.unileversolutions.com/v1/1862828.png?im=AspectCrop=(680,680);Resize=(680,680)",
     name: "Butter-Scothch",
     price:23,
     status: false,
@@ -60,14 +60,14 @@ function Menu() {
   status: false,
 },
 {
-  productId: '7' ,
+  productId: '9' ,
   image:"https://assets.unileversolutions.com/v1/33714264.png?im=AspectCrop=(680,680);Resize=(680,680)",
   name: "Desi-Kulfi",
   price:54,
   status: false,
 },
 {
-  productId: '7' ,
+  productId: '10' ,
   image:"https://assets.unileversolutions.com/v1/1862840.png?im=AspectCrop=(270,270);Resize=(270,270)",
   name: "Double-Choclate",
   price:23,
