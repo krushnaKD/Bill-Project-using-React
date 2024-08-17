@@ -6,23 +6,21 @@ import Background from './Components/Background'
 import Menu from './Components/Menu'
 import { Route, Routes } from 'react-router-dom'
 import { data } from 'autoprefixer'
-function App() {
+import Order from './Components/Order'
+function App({set}) {
    
  
  
 
 
 
-const getData = (productId) => {
-  console.log(productId);
-}
 
 
   return (
     <>
     <div className=' w-full h-100vh ' >
-     <Navbar set={data} />
-     
+    <Navbar set={data}/>
+   <Background/>     
 
       
      </div>
@@ -33,6 +31,7 @@ const getData = (productId) => {
     <Route path='/Background' element={<Background/>}/>
       <Route path='/About' element={<About/>}/>
       <Route path='/Menu' element={<Menu/>}/>
+      <Route path='/order' element={<Order/>}/>
 
     </Routes>
   
