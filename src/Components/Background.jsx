@@ -9,7 +9,7 @@ function Background() {
     </div>
     <div className='w-[100%] h-[50%] bg-zinc-100 '>
       <div className='w-full h-screen flex items-center justify-center bg-red-500'>
-      <div className='h-3/4 w-3/4 bg-[#c1ff76] pl-5 pt-10 h-[50vh]  md:w-[70vw] md:h-[30vh] rounded-md flex  justify-around'>
+      <div className='h-[70%] w-3/4 bg-[#c1ff76] pl-5 pt-10   md:w-[70vw] md:h-[35vh] rounded-md flex  justify-around'>
        <div className='w-[35vw] h-[62vh] rounded-md overflow-hidden '>
         <img className=' object-contain rounded-md  ' src="https://i.pinimg.com/564x/12/3a/1a/123a1a9bc9041a2207071b84eca4d186.jpg" alt="" />
        </div>
