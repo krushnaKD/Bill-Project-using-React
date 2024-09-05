@@ -92,21 +92,21 @@ const getData = (productId) => {
   // console.log(productId);
 
   
-  setcart((prev)=>{
+  // setcart((prev)=>{
     
-   return prev.filter((item)=>{
-    // console.log(item.id);
+  //  return prev.filter((item)=>{
+  //   // console.log(item.id);
     
-      if(item.id==productId ){
-        console.log("hell");
+  //     if(item.id==productId ){
+  //       console.log("hell");
         
-      }
+  //     }
     
-    }
-   )
+  //   }
+  //  )
    
         
-  })
+  // })
 }
 
   return (
