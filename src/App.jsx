@@ -7,6 +7,7 @@ import Menu from './Components/Menu'
 import { Route, Routes } from 'react-router-dom'
 import { data } from 'autoprefixer'
 import Order from './Components/Order'
+import Details from './Components/Details'
 function App({set}) {
    
  
@@ -32,6 +33,7 @@ function App({set}) {
       <Route path='/About' element={<About/>}/>
       <Route path='/Menu' element={<Menu/>}/>
       <Route path='/order' element={<Order/>}/>
+      {/* <Route path='/Details/:i' element={<Details/>}/> */}
 
     </Routes>
   
