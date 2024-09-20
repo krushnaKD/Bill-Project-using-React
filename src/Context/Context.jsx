@@ -30,7 +30,7 @@ const Context = (props) => {
      },
     ,{
         productId: '5' ,
-        image:"https://assets.unileversolutions.com/v1/1869482.png?im=AspectCrop=(351,351);Resize=(351,351)",
+        image:"https://assets.unileversolutions.com/v1/1862843.png?im=AspectCrop=(985,985);Resize=(985,985)",
         name: "feast Bar",
         price: 40,
         status: false,

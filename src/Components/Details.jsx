@@ -6,9 +6,9 @@ const Details = () => {
   const { users, setusers } = useContext(dataContext);
    
   
- const {id} =  useParams()
-      console.log(id);
-      
+
+      handleclick
+
    
   return (
     <>

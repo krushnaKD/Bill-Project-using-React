@@ -5,22 +5,22 @@ import Background from "./Background";
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-function Navbar({ set }) {
+function Navbar({ set ,}) {
   return (
-    <div className="w-full  h-22 p-5 flex items-center justify-between bg-red-300 fixed top-0 ">
+    <div className="w-full  h-16 p-5 flex items-center justify-between bg-red-300  top-0 ">
       <h1 className="font-semibold text-2xl">Ice Creame Cafe</h1>
       <div className="">
         <ul className="flex text-lg   sm:hidden md:hidden lg:block  ">
           <Link className="" to="/">
             Home
           </Link>
-          <Link className="ml-10 " to="/Menu">
+          <Link  className="ml-10 " to="/Menu">
             Menu
           </Link>
           <Link className="ml-10  " to="/Order">
             Order's
           </Link>
-          <Link className="ml-10 " to="/About">
+          <Link  className="ml-10 " to="/About">
             About
           </Link>
         </ul>
