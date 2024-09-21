@@ -10,6 +10,7 @@ import Order from "./Components/Order";
 import Details from "./Components/Details";
 import { CartContext } from "./Context/CartContext";
 import Footer from "./Components/Footer";
+import Creat from "./Components/Creat";
 function App({ set }) {
      
    
@@ -22,16 +23,17 @@ function App({ set }) {
     <>
       <div className=" w-full h-100vh ">
         <Navbar set={data} />
-        <Background />
+        {/* <Background /> */}
        
       </div>
 
       <Routes>
-        <Route path="/Background" element={<Background />} />
+        <Route path="/" element={<Background />} />
         <Route path="/About" element={<About />} />
         <Route path="/Menu" element={<Menu />} />
-        {/* <Route path="/order" element={<Order />} /> */}
-        {/* <Route path='/Details/:i' element={<Details/>}/> */}
+        <Route path="/order" element={<Order />} />
+        <Route path="/creat" element={<Creat />} />
+
       </Routes>
       <Footer/>
       </>

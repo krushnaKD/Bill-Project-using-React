@@ -3,7 +3,8 @@ import React, { createContext, useState } from 'react'
 export const dataContext = createContext();
 
 const Context = (props) => {
-  const [users,setusers] = useState( [{
+  const [items,setitems] = useState([
+    {
         productId: '1',
         image:"https://assets.unileversolutions.com/v1/1868094.png?im=AspectCrop=(351,351);Resize=(351,351)",
         name:"Vanila",
@@ -71,10 +72,11 @@ const Context = (props) => {
       status: false,
     },
     ])
-    console.log(users);
+    
+    // console.log(users);
     
   return (
-    <dataContext.Provider value={{users,setusers}}>
+    <dataContext.Provider value={{items,setitems}}>
     {props.children}
   </dataContext.Provider>
   )
