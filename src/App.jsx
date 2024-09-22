@@ -11,6 +11,7 @@ import Details from "./Components/Details";
 import { CartContext } from "./Context/CartContext";
 import Footer from "./Components/Footer";
 import Creat from "./Components/Creat";
+import Feedback from "./Components/Feedback";
 function App({ set }) {
      
    
@@ -33,6 +34,8 @@ function App({ set }) {
         <Route path="/Menu" element={<Menu />} />
         <Route path="/order" element={<Order />} />
         <Route path="/creat" element={<Creat />} />
+        <Route path="/feedback" element={<Feedback />} />
+
 
       </Routes>
       <Footer/>

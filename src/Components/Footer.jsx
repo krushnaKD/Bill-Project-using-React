@@ -2,6 +2,7 @@ import React from "react";
 import { FaTwitterSquare } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="w-full h-screen pt-16 pl-16 pr-10">
@@ -49,6 +50,7 @@ const Footer = () => {
       <div className="flex justify-between gap-10">
         <h2 className="text-lg cursor-pointer hover:text-orange-500">Privacy Policy</h2>
         <h2 className="text-lg cursor-pointer hover:text-orange-500">Terms & Condition</h2>
+        <Link to="/feedback" className="text-lg cursor-pointer hover:text-orange-500">Feedback</Link >
 
       </div>
         </div>
