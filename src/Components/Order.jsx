@@ -25,10 +25,10 @@ function Order() {
   return (
     <>
      <div className="w-full h-screen bg-zinc-200 p-10">
-    <div className=" p-10 flex  gap-10  "> 
+    <div className=" p-10 flex  gap-10 flex-wrap"> 
       {cart.map((p,i) => (
         <>
-        <div key={i} className="p-2  w-[10vw] h-[30vh] bg-zinc-100 rounded-md relative  mb-5 flex flex-col shadow-2xl">
+        <div key={i} className="p-2  w-[10vw] h-[30vh] bg-zinc-100 rounded-md relative  mb-5 flex flex-col  shadow-2xl">
         <img className="object-cover hover:scale-110 w-[30vw] transition-all duration-100  " src={p.image} alt="" />
         <h1>{p.name}</h1>
         <p>${p.price}</p>
@@ -40,7 +40,7 @@ function Order() {
       ))}
        
       </div>
-      <h1 className="mt-[10%] w-[50%]  text-xl font-semibold ">Total is :-${pricees}</h1>
+      <h1 className="ml-[90%] w-[50%]  text-xl font-semibold ">Total is :-${pricees}</h1>
 
       </div>
     </>

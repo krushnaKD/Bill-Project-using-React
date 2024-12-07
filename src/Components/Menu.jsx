@@ -22,6 +22,8 @@ function Menu() {
       return;
     }
     setCart([...cart, item]);
+
+  
   };
   
 
@@ -66,14 +68,12 @@ function Menu() {
           <div>
             <h1 className="mt-3  justify-self-start ">Name :- {a.name}</h1>
             <h3 className="mt-3 mb-4">Price :- {a.price}</h3>
-            <button
+            <button id="wrap"
               onClick={() => {
-                console.log("jee");
-
-                // handleClick(a);
+                                
               }}
               className={`px-3 text-white rounded-md ${
-                status === false ? "bg-orange-600" : "bg-sky-500"
+                a.status === false ? "bg-orange-600" : "bg-sky-500"
               } ml-10 whitespace-nowrap mt-0`}
             >
               Add To Cart
