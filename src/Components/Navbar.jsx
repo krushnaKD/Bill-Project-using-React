@@ -1,56 +1,72 @@
 import React from "react";
-import About from "./About";
-import Menu from "./Menu";
-import Background from "./Background";
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 function Navbar({ set }) {
   return (
-    <div className="w-full  h-16 p-5 flex items-center justify-between relative bg-red-300  top-0 ">
-      <h1 className="font-semibold text-2xl">Ice Creame Cafe</h1>
-      <div className="">
-        <ul className="flex text-lg   sm:hidden md:hidden lg:block  ">
-          <Link className="" to="/">
-            Home
-          </Link>
-          <Link  className="ml-10 " to="/Menu">
-            Menu
-          </Link>
-          <Link className="ml-10  " to="/Order">
-            Order's
-          </Link>
-          <Link  className="ml-10 " to="/About">
-            About
-          </Link>
-          <Link  className="ml-10 " to="/creat">
-            ADD product
-          </Link>
-        </ul>
-        <Link className=" md:text-[3vh] sm:bg-red-300 ">
-          <div className="group">
-            <button className="hover:bg-red-500 transition md:block    hover:border-b lg:hidden sm:text-4xl">
-              <RxHamburgerMenu />
-            </button>
-            <div className="hidden transition group-hover:flex flex-col right-5 left-[70%]  rounded-lg absolute w-fit index p-10  bg-orange-400 z-20 text-black">
-              <div className=" flex  flex-col gap-5">
-                <Link
-                  className="hover:border-b border-pink-600 border-3 "
-                  to="/Menu"
-                >
-                  Menu
-                </Link>
-                <Link className="hover:border-b border-pink-600  " to="/Order">
-                  Order's
-                </Link>
-                <Link className="hover:border-b border-pink-600  " to="/About">
-                  About
-                </Link>
-              </div>
-            </div>
-          </div>  
+    <div className="w-full h-16 p-5 flex items-center justify-between bg-red-300 fixed top-0 z-50">
+      {/* Logo */}
+      <h1 className="font-semibold text-xl sm:text-2xl">Ice Creame Cafe</h1>
+
+      {/* Desktop Links */}
+      <ul className="hidden lg:flex text-lg gap-10">
+        <Link className="hover:text-white transition" to="/">
+          Home
         </Link>
-        {/* <li className='bg-red-300 px-1 gap-10 rounded-md text-[17px]'>Favouriets <span>({set.filter(item => item.status === true).length})</span></li> */}
+        <Link className="hover:text-white transition" to="/Menu">
+          Menu
+        </Link>
+        <Link className="hover:text-white transition" to="/Order">
+          Orders
+        </Link>
+        <Link className="hover:text-white transition" to="/About">
+          About
+        </Link>
+        <Link className="hover:text-white transition" to="/creat">
+          Add Product
+        </Link>
+      </ul>
+
+      {/* Mobile Hamburger Menu */}
+      <div className="lg:hidden">
+        <div className="relative group">
+          <button className="text-3xl hover:bg-red-500 p-2 rounded transition">
+            <RxHamburgerMenu />
+          </button>
+          {/* Dropdown Menu */}
+          <div className="hidden group-hover:flex flex-col absolute right-0 mt-2 w-48 bg-orange-400 rounded-lg shadow-lg text-black">
+            <Link
+              className="py-2 px-4 hover:bg-orange-500 transition"
+              to="/"
+            >
+              Home
+            </Link>
+            <Link
+              className="py-2 px-4 hover:bg-orange-500 transition"
+              to="/Menu"
+            >
+              Menu
+            </Link>
+            <Link
+              className="py-2 px-4 hover:bg-orange-500 transition"
+              to="/Order"
+            >
+              Orders
+            </Link>
+            <Link
+              className="py-2 px-4 hover:bg-orange-500 transition"
+              to="/About"
+            >
+              About
+            </Link>
+            <Link
+              className="py-2 px-4 hover:bg-orange-500 transition"
+              to="/creat"
+            >
+              Add Product
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );
